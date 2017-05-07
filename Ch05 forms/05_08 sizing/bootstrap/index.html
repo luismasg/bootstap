@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Bootstrap</title>
+</head>
+<body>
+
+<!--
+ glyphicons should be spans
+they can be inside buttons
+if you use icons without text use aria-label="print this page" or something
+
+you can use them in h1/2/3/4/ and it will adjust to the context
+you can use them in parragraphs and it will be inlined smootly
+if inside these text elements do aria-hidden="true"  so as to not confuse the reader saying 'Header, welcome, icon..something'
+-->
+
+<div class="container">
+  <div class="row">
+    <section class="col-xs-12">
+
+<h1><span class="glyphicon glyphicon-print" aria-hidden="true" ></span> Headline</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nobis, accusantium molestias. Dolorem, culpa, sint! Eaque aliquam nam, enim voluptas, numquam ducimus laboriosam! At officiis fugiat eius iste ullam quam.</p>
+<button class="btn btn-default">
+    <span class="glyphicon glyphicon-print" aria-hidden="true" > Print</span>
+</button>
+<br>
+<br>
+<button class="btn btn-default" aria-label="Print this page">
+    <span class="glyphicon glyphicon-print" aria-hidden="true"  ></span>
+</button>
+
+
+    </section>
+  </div><!-- row -->
+</div><!-- content container -->
+
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
